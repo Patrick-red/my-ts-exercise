@@ -1,0 +1,27 @@
+{
+  "name": "my-ts-exercise",
+  "version": "1.0.0",
+  "description": "exercise for typescript type challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrick-red/my-ts-exercise.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "type"
+  ],
+  "author": "YuanJie Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrick-red/my-ts-exercise/issues"
+  },
+  "homepage": "https://github.com/Patrick-red/my-ts-exercise#readme",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1"
+  }
+}
