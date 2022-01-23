@@ -27,9 +27,13 @@ const files = ['README.zh-CN.md', 'template.ts', 'test-cases.ts']
 fs.mkdirSync(path.join(__dirname, `../questions/${targetFolderName}`), { recursive: true })
 
 files.forEach(file => {
-    fs.mk
-    fileSave(path.join(__dirname, `../questions/${targetFolderName}/${file}`))
+    if (fs.existsSync(`${targetFilePath}/${file}`)) {
+        fileSave(path.join(__dirname, `../questions/${targetFolderName}/${file}`))
         .write(fs.readFileSync(`${targetFilePath}/${file}`))
         .end('\n')
+    } else {
+        console.log('\x1B[36m%s\x1B[0m', `${file} does not exist`)
+    }
+
 })
 console.log('\x1B[36m%s\x1B[0m', 'successfully build new')
