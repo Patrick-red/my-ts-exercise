@@ -1,7 +1,7 @@
 type Space = ' ' | '\n\t' | '\t'
 export type Trim<S extends string> = S extends `${Space}${infer R}`
   ? Trim<R>
-  : S extends `${ infer U } ${ Space }`
+  : S extends `${ infer U }${ Space }`
     ? Trim<U>
     : S
 
