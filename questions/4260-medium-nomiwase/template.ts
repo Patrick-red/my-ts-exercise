@@ -10,7 +10,7 @@ type AllCombinations<
           : AllCombinations<`${Tail}${Head}`, OriginalS>)
       | AllCombinations<Tail>
   : S;
-
+// 所有解法 = 有第一个字符的解法（第一个字符在第一个位置的解法，循环其他位置的解法） + 没有第一个字符的解法
 
 //   type findTwoStringCombinations<L extends string, R extends string> =
 //   | L
@@ -28,3 +28,4 @@ type AllCombinations<
 //   : never;
 
 // type AllCombinations<S extends string> = _AllCombinations<StringToUnion<S>>;
+// 递归解法
